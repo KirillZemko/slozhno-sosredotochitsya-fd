@@ -6,4 +6,6 @@
   --main-font: 'IBM Plex mono', sans-serif;
   --background-img: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
+  --card-header-color: #000028;
+  --card-text-color: #F1B2CE;
 }
