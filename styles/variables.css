@@ -5,6 +5,7 @@
 :root {
   --main-font: 'IBM Plex mono', sans-serif;
   --background-img: url(../images/cover-image-dark.png);
+  --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   --accent-color: #FF0070;
   --card-header-color: #000028;
   --card-text-color: #F1B2CE;

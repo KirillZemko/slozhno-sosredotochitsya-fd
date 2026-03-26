@@ -124,7 +124,7 @@
   color: #DB00FF;
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-font-size);
   line-height: 83%;
   align-self: self-end;
 }
@@ -240,7 +240,7 @@
   color: #DB00FF;
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--title-font-size);
   line-height: 83%;
 }
 
@@ -324,8 +324,6 @@
     grid-column: 2 / 4;
   }
 
-  .card_type_gallery {}
-
   .card__text_gallery-subtitle {
     margin-block-end: 0;
     grid-column: 1 / 4;
@@ -358,5 +356,50 @@
 
 /* ширина больше 1024px пикселей */
 @media (width >= 1024px) {
+  
+  /* header */
 
+  .header {
+    max-width: 984px;
+  }
+
+  .header__theme-menu {
+    align-self: self-start;
+    justify-self: center;
+    margin-block-start: 20px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__theme-menu-item {
+    margin-bottom: 0;
+  }
+
+  .header__description {
+    max-width: 491px;
+  }
+
+  /* main */
+
+  .main {
+    max-width: 984px;
+  }
+
+  /* article */
+
+  .card_type_concetration {
+    grid-column: 1 / 2;
+  }
+
+  .card_type_meal {
+    grid-column: 2 / 3;
+  }
+
+  .card_type_gadgets {
+    grid-column: 3 / 4;
+  }
 }
