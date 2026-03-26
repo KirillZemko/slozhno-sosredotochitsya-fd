@@ -4,9 +4,16 @@
 */
 :root {
   --main-font: 'IBM Plex mono', sans-serif;
+  --background-color: #000028;
   --background-img: url(../images/cover-image-dark.png);
+  --menu-button-color: #FF0070;
+  --menu-button-color-hover: rgba(255, 0, 112, 0.4); 
+  --title-font-color: #DB00FF; 
+  --title-drop-shadow: #FF0070;
   --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  --accent-text-color: #000028;
   --accent-color: #FF0070;
-  --card-header-color: #000028;
+  --article-text-color: #FF0070;
   --card-text-color: #F1B2CE;
+  --footer-shadow-color: #FF0070;
 }
