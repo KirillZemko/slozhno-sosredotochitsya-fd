@@ -18,8 +18,8 @@
   height: 100vh;
   min-height: 668px;
   width: 100%;
-  padding: 0 10px;
-  position: relative;
+  max-width: 355px;
+  margin: 0 auto;
 }
 
 .header__rec {
@@ -98,16 +98,20 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.6);
-  padding: 0 25px 5px 25px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: 1px solid var(--accent-color);
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
-  padding: 0 25px 5px 25px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
 }
 
 .header__theme-menu {
@@ -141,14 +145,16 @@
   width: 100%;
   max-width: 355px;
   margin: 0 auto;
-}
-
-.article {
   margin-block-start: 50px;
 }
 
-.article:first-of-type {
-  margin-block-start: 40px;
+.article {
+  margin-bottom: 50px;
+}
+
+.article_type_gallery {
+  display: grid;
+  gap: 10px;
 }
 
 .article__title {
@@ -214,6 +220,8 @@
 
 .card__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -224,6 +232,7 @@
   min-height: 667px;
   width: 100%;
   position: relative;
+  margin-block-start: 40px;
 }
 
 .footer__title {
@@ -233,4 +242,121 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
+}
+
+/* ширина больше 768px пикселей */
+@media (width >= 768px) {
+
+  /* header */
+
+  .header {
+    max-width: 728px;
+  }
+
+  .header__rec {
+    top: 20px;
+    right: 30px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right:20px
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .header__theme-menu {
+    align-self: self-end;
+  }
+
+  .header__title {
+    align-self: center;
+    margin-inline-start: -20px;
+  }
+
+  .header__description {
+    max-width: 364px;
+    justify-self: end;
+  }
+
+  /* main */
+
+  .main {
+    max-width: 728px;
+  }
+
+  /* article */
+
+  .article:first-of-type {
+    margin-block-start: 60px;
+  }
+
+  .article {
+    margin-block-end: 80px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    margin-block-start: 0px;
+  }
+
+  .card_type_multitasking,
+  .card_type_dofamin {
+    grid-column: 2 / 4;
+  }
+
+  .card_type_concetration,
+  .card_type_meal,
+  .card_type_gadgets {
+    grid-column: 1 / 4;
+  }
+
+  .card_type_sky-clouds,
+  .card_type_music,
+  .card_type_walking,
+  .card_type_eat,
+  .card_type_read {
+    grid-column: 2 / 4;
+  }
+
+  .card_type_gallery {}
+
+  .card__text_gallery-subtitle {
+    margin-block-end: 0;
+    grid-column: 1 / 4;
+  }
+
+  .card__img_sunset {
+    grid-column: 1 / 3;
+  }
+
+  .card__img_icecream {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+
+  .card__img_tape {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
+
+  .card__img_book {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .card__img_street {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+}
+
+/* ширина больше 1024px пикселей */
+@media (width >= 1024px) {
+
 }
