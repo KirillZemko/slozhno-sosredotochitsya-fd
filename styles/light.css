@@ -21,6 +21,22 @@
   --footer-shadow-color: #FF0070;
 }
 
-:root.theme-light .header__rec {
+:root.theme-light .header__rec,
+:root.theme-auto .header__rec {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #F1B2CE;
+    --background-img: url(../images/cover-image-light.png);
+    --menu-button-color: #353430;
+    --title-font-color: #FFC2E6;
+    --menu-button-color-hover: rgba(50, 49, 45, 0.4);
+    --accent-color: #FF8DCB;
+    --accent-text-color: #353430;
+    --card-text-color: #353430;
+    --article-text-color: #353430;
+    --footer-shadow-color: #FF0070;
+  }
 }
