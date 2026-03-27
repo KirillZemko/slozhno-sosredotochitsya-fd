@@ -19,4 +19,4 @@
 ## 👤 Автор
 Земко Кирилл
 
-https://github.com/username/slozhno-sosredotochitsya-fd
+https://github.com/KirillZemko/slozhno-sosredotochitsya-fd
