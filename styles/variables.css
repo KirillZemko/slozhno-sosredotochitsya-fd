@@ -10,7 +10,8 @@
   --menu-button-color-hover: rgba(255, 0, 112, 0.4); 
   --title-font-color: #DB00FF; 
   --title-drop-shadow: #FF0070;
-  --title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  --title-font-size-mobile: clamp(7.25rem, 7.1304rem + 0.5102vw, 7.375rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --accent-text-color: #000028;
   --accent-color: #FF0070;
   --article-text-color: #FF0070;
